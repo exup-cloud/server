@@ -49,7 +49,7 @@ tags: 永续合约, 合约云
 
 ### 2.1 交互流程图
 
-![image_1csanpq561ufgsfdj878iqsus9.png-68kB][1]
+
 
 
 ### 2.2 接口调用规范说明
