@@ -48,7 +48,7 @@ tags: 永续合约, 合约云
 ## 2. 服务端接入说明
 
 ### 2.1 交互流程图
-
+![image](https://github.com/exup-cloud/server/blob/master/images/flowchart.png)
 
 
 
