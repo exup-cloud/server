@@ -176,7 +176,7 @@ hdtfynOwVs297s1InwIDAQAB
 |---              |---   |---|---|
 |method           |string|Y|account.create|
 |origin_uid       |string|Y|子账号在接入方的用户ID,同一个接入方origin_uid确保是唯一的|
-|api_key_lifespan |int64 |N|api_key的有效时长(单位秒)，如果不传，默认有效时长为30天|
+|api_key_life_span |int64 |N|api_key的有效时长(单位秒)，如果不传，默认有效时长为30天|
 
 
 - 返回数据(json)
@@ -256,7 +256,7 @@ hdtfynOwVs297s1InwIDAQAB
 |method|string|Y|account.api_key.update|
 |origin_uid|string|N|接入方的用户ID|
 |account_id|int64|N|用户ID(合约云)|
-|api_key_lifespan|int64|N|api_key的有效时长(单位秒)，如果不传，默认有效时长为30天|
+|api_key_life_span|int64|N|api_key的有效时长(单位秒)，如果不传，默认有效时长为30天|
 
 `origin_uid`和`account_id`二者必须填其一
 
