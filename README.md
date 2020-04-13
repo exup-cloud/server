@@ -454,21 +454,33 @@ hdtfynOwVs297s1InwIDAQAB
 {
     "orders": [
         {
-            "order_id": 10284160, // 订单ID
-            "contract_id": 1, // 合约ID
-            "price": "8", // 订单价格
-            "vol": "4", // 订单量
-            "done_avg_price": "0", // 成交均价
-            "done_vol": "0", // 成交量
-            "way": 1, // 订单方向
-            "category": 1, // 订单类型
-            "make_fee": "0", // make fee
-            "take_fee": "0", // take fee
-            "origin": "", // 来源
-            "created_at": "2018-07-17T07:24:13.410507Z",
-            "finished_at": null, // 结束时间
-            "status": 2, // 状态
-            "errno": 0 // 订单结束的原因
+            "oid": 10539098,        // 订单id
+            "company_id": 1000001,  // 商家ID(合约云客户端，company_id=app_id)
+            "instrument_id": 1,     // 合约id
+            "pid": 10539088,        // 平仓为id
+            "uid": 10,              // 用户id
+            "px": "16",             // 订单价格
+            "qty": "1",             // 订单总量
+            "hide_qty": "0",        // 订单隐藏量
+            "avg_px": "16",         // 成交均价
+            "cum_qty": "1",         // 成交量
+            "side": 3,              // 订单方向
+            "category": 1,          // 订单类型
+            "make_fee": "0.00025",  // make fee
+            "take_fee": "0.012",    // take fee
+            "origin": "",           // 来源
+            "status": 4,            // 状态
+            "errno": 0,             // 订单结束原因
+            "position_type": 2,     // 1:逐仓,2:全仓
+            "time_in_force": 1,     // 1:普通,2:FOK,3:IOC
+            "mfr": "0.00025",       // 系统的make手续费率
+            "tfr": "0.00075",       // 系统的take手续费率
+            "self_mfr": "0.00025",  // 用户自己的make手续费率,如果没有返回该字段,或者值为0,表示用户的手续费率以系统的配置为准
+            "self_tfr": "0.00075",  // 用户自己的take手续费率,如果没有返回该字段,或者值为0,表示用户的手续费率以系统的配置为准
+            "leverage": "10",       // 订单的杠杆大小,
+            "client_id": 123123,    // 前端自定义id
+            "created_at": "2018-07-23T11:55:56.715305Z",
+            "finished_at": "2018-07-23T11:55:56.763941Z",
         }
     ]
 }
@@ -537,24 +549,26 @@ hdtfynOwVs297s1InwIDAQAB
 {
     "positions": [
         {
-            "position_id": 10116365, // 仓位ID
-            "account_id": 10, // 用户ID
-            "contract_id": 1, // 合约ID
-            "hold_vol": "10", // 当前持有量
-            "freeze_vol": "0", // 冻结量
-            "close_vol": "0", // 已平仓量
-            "hold_avg_price": "16", // 开仓均价
-            "close_avg_price": "0", // 已平仓,平仓均价
-            "liquidate_price": "20.99", // 强平价
-            "im": "100.075", // 开仓保证金
-            "mm": "50", // 维持保证金
-            "realised_profit": "-0.075", // 已实现盈亏
-            "earnings": "-0.075", // 已结算收益
-            "hold_fee": "0", // 持仓产生的资金费用
-            "open_type": 1, // 开仓方式,1:逐仓,2:全仓
-            "position_type": 2, // 仓位类型,1:开多,2:开空
-            "status": 1, // 状态,1:持仓中,2:系统托管中,4:已平仓
-            "errno": 0, // 平仓原因
+            "pid": 10116365,         // 仓位ID
+            "company_id": 1000001,   // 商家ID(合约云客户端，company_id=app_id)
+            "uid": 10,               // 用户ID
+            "instrument_id": 1,      // 合约ID
+            "cur_qty": "10",         // 当前持仓量
+            "freeze_qty": "0",       // 冻结仓位
+            "close_qty": "0",        // 已平仓位
+            "avg_cost_px": "16",     // 持仓均价(当前持仓)
+            "avg_open_px": "16",     // 开仓均价(包括已平仓位)
+            "avg_close_px": "0",     // 已平仓均价
+            "oim": "100.075",        // 原始开仓保证金
+            "im": "100.075",         // 开仓保证金
+            "mm": "50",              // 维持保证金
+            "realised_pnl": "-0.075",// 已实现盈亏
+            "earnings": "-0.075",    // 已结算收益
+            "tax": "0",              // 持仓产生的资金费用
+            "position_type": 1,      // 持仓类型(1-逐仓，2-全仓)
+            "side": 2,               // 仓位方向(1-多仓，2-空仓)
+            "status": 1,             // 状态(1-持仓中，2-系统托管，3-已平仓)
+            "errno": 0,              // 平仓原因(见下表)
             "created_at": "2018-07-17T03:04:26.108983Z",
             "updated_at": "2018-07-17T03:04:26.098404Z"
         }
