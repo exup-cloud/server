@@ -834,6 +834,13 @@ hdtfynOwVs297s1InwIDAQAB
 |way_zh|string|Y|仓位方向中文|
 |modify_vol|string|N|相关交易量|
 |order_id|string|N|订单号,计划委托中有效|
+|fixed_leverage|string|N|固定杠杆| 
+|actual_leverage|string|N|实际杠杆|
+|risk_ratio|string|N|风险率|
+|pnl_ratio|string|N|回报率|
+
+
+
 
 - 通知类型
   
