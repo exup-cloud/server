@@ -838,7 +838,8 @@ hdtfynOwVs297s1InwIDAQAB
 |actual_leverage|string|N|实际杠杆|
 |risk_ratio|string|N|风险率|
 |pnl_ratio|string|N|回报率|
-
+|executive_price|string|N|计划委托执行价格| 
+|executive_time|string|N|计划委托执行时间| 
 
 
 
