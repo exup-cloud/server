@@ -834,12 +834,12 @@ hdtfynOwVs297s1InwIDAQAB
 |way_zh|string|Y|仓位方向中文|
 |modify_vol|string|N|相关交易量|
 |order_id|string|N|订单号,计划委托中有效|
-|fixed_leverage|string|N|固定杠杆| 
-|actual_leverage|string|N|实际杠杆|
-|risk_ratio|string|N|风险率|
-|pnl_ratio|string|N|回报率|
-|executive_price|string|N|计划委托执行价格| 
-|executive_time|string|N|计划委托执行时间| 
+|fixed_leverage|string|N|固定杠杆，强平预警中有效| 
+|actual_leverage|string|N|实际杠杆，强平预警中有效|
+|risk_ratio|string|N|风险率，强平预警中有效|
+|pnl_ratio|string|N|回报率，强平预警中有效|
+|trigge_price|string|N|计划委托触发价格| 
+|trigge_time|string|N|计划委托触发时间| 
 
 
 
