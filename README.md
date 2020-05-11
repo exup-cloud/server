@@ -19,7 +19,7 @@ tags: 永续合约, 合约云
 
 ### 1.2 技术对接流程
 1. 商户在tigermex测试官网注册tigermex账户,作为商户在合约云下的母账户
-    (正式：https://bitwind.com/  测试： https://mybts.info/)    
+    (正式：https://bitwind.com/  测试： http://swap.hiup.pro/)    
 2. 商户提供以下信息：
     - 商户在mybts测试环境的官网注册的mybts用户信息：注册名、UID
     - 服务器间通信中，商户数据的签名公钥（测试用）
@@ -60,7 +60,7 @@ tags: 永续合约, 合约云
 - 接口地址:
     - 合约云券商接口
         - 生产：
-        - 测试：`http://swapcloud.mybts.info/gateway`
+        - 测试：`http://swapcloud.hiup.pro/gateway`
     - 交易接口地址
         合约云提供一个`cname`地址，商家可以将自己子域名解析到合约云提供的`cname`地址上面，测试示例提供的地址商家可以在没有指定域名解析时用来测试
         - 生产：
@@ -88,7 +88,7 @@ tags: 永续合约, 合约云
 - 示例：
 
 ```
-POST https://swapcloud.mybts.info/gateway
+POST http://swapcloud.hiup.pro/gateway
 Accept: application/json
 Content-Type: application/x-www-form-urlencoded
 
